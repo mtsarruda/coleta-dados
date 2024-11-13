@@ -86,3 +86,11 @@ df = pd.DataFrame(data)
 df.to_csv('dados_re.csv',index = False, sep = ";")
 
 # %%
+
+df.to_parquet('dados_re.parquet')
+
+# %%
+
+df_new = pd.read_parquet('dados_re.parquet')
+
+df_new
