@@ -94,3 +94,4 @@ df.to_parquet('dados_re.parquet')
 df_new = pd.read_parquet('dados_re.parquet')
 
 df_new
+
